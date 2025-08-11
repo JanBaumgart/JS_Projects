@@ -12,8 +12,8 @@ const GAME_HEIGHT = BG_HEIGHT + ROAD_HEIGHT;
 const BIRD_SIZE = 88;      // sichtbare Größe des Vogels (Quelle 1024×1024)
 
 const COL_WIDTH = 70;      // sichtbare Breite der Säulen
-const COL_HEIGHT = GAME_HEIGHT - 800 // etwas Überstand
-const BIRD_SPEED_X = 200;   // Vorwärtsgeschwindigkeit
+const COL_HEIGHT = GAME_HEIGHT - 620 // etwas Überstand
+const BIRD_SPEED_X = 140;   // Vorwärtsgeschwindigkeit
 const JUMP_VY = -250;      // Sprung-Impuls
 const GRAVITY_Y = 320;     // Welt-Gravitation
 
