@@ -182,7 +182,7 @@ function create() {
 
 
     // Hinweis-Text
-    messageToPlayer = this.add.text(0, 0, 'Leertaste zum starten drücken Süßling', {
+    messageToPlayer = this.add.text(0, 0, 'Leertaste zum starten drücken', {
         fontFamily: '"Comic Sans MS", Times, serif',
         fontSize: '40px',
         color: '#ffffff',
