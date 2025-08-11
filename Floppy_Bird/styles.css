@@ -1,0 +1,88 @@
+/* styles.css – Seite und Spiel mittig ausrichten */
+:root {
+    --page-bg: #0e0e0e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Seite schwarz + Inhalte untereinander zentriert */
+body {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    /* <— Button unter dem Spiel */
+    align-items: center;
+    /* horizontal zentriert */
+    justify-content: center;
+    /* vertikal zentriert */
+    gap: 16px;
+    /* Abstand zwischen Spiel & Button */
+    background: #000;
+    /* <— schwarzer Hintergrund */
+}
+
+/* Canvas sauber anzeigen */
+#game,
+canvas {
+    display: block;
+    line-height: 0;
+}
+
+/* Button mittig unter dem Spiel */
+#controls {
+    display: flex;
+    justify-content: center;
+}
+
+#restart-btn {
+    padding: 10px 16px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#restart-btn:active {
+    transform: translateY(1px);
+}
+
+/* Verhindert weiße Ränder um das Canvas */
+#game,
+canvas {
+    display: block;
+    line-height: 0;
+}
+
+#controls {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+#restart-btn {
+    padding: 10px 16px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#restart-btn:active {
+    transform: translateY(1px);
+}
+
+/* Optional: Rahmen/Schatten um das Spiel (wenn gewünscht, einkommentieren) */
+#game {
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
